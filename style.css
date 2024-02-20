@@ -295,6 +295,7 @@ input:focus+label {
     gap: 10px;
     min-width: 15rem;
     > :nth-child(1){
+        margin: 0 0.5rem 0 0;
         height: 5rem;
         width: auto;
     }
@@ -344,6 +345,10 @@ input:focus+label {
         align-items: center;
         padding: 1.5rem;
         margin-bottom: 0.5rem;
+        img{
+            width: 40px;
+            height: 40px;
+        }
     }
     .ques:hover{
         background-color: #414141;
@@ -385,8 +390,14 @@ footer{
         width: 100vw;
         padding: 25px 30px;
     }
+    .content{
+        max-width: calc(100% - 4rem);
+    }
 
     .content-wrapper {
+        max-width: calc(100% - 4rem);
+    }
+    .faq{
         max-width: calc(100% - 4rem);
     }
 }
@@ -399,6 +410,11 @@ footer{
         display: flex;
         padding: 0 30px;
         justify-content: space-between;
+    }
+
+    .wrapper{
+        min-height: 32rem;
+        /* padding: 8.5rem 0 3rem; */
     }
 
     .buttons {
@@ -450,10 +466,66 @@ footer{
             font-weight: 400;
         }
     }
-    .download:nth-child(1){
-        height: 3rem;
+    .download{
+        > :nth-child(1){
+            height: 4rem;
+        }
+        > :nth-child(3){
+            width: 3rem;
+        }
     }
-    .download:nth-child(3){
-        width: 1rem;
+    .faq{
+        max-width: calc(100% - 4rem);
+    }
+    .text-faq{
+        h2{
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        .ques{
+            font-size: 1.125rem;
+            font-weight: 400;
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section{
+        padding: 3.5rem 0;
+    }
+    .mail, .input-mail{
+        width: 100%;
+    }
+    input[type="text"]{
+        width: 100%;
+    }
+    .tv{
+        padding: 0;
+    }
+    .download{
+        width: 85%;
+        > :nth-child(1){
+            height: 3rem;
+        }
+        > :nth-child(2){
+            h4{
+                font-size: 0.875rem;
+                font-weight: 600;
+            }
+            p{
+                font-size: 0.75rem;
+                font-weight: 400;
+            }
+        }
+        > :nth-child(3){
+            width: 3rem;
+        }
+    }
+    .faq{
+        max-width: calc(100% - 3rem);
     }
 }
