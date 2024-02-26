@@ -14,7 +14,7 @@
         <nav class="navbar">
             <img src="assets/netflix-logo.svg" class="logo" alt="Netflix">
             <div class="buttons">
-                <span class="btn lang">
+                <span class="lang">
                     <img src="assets/translate.svg">
                     <select name="lang" id="lang">
                         <option value="english">English</option>
@@ -22,7 +22,7 @@
                     </select>
                     <img src="assets/dropdown.svg">
                 </span>
-                <span class="btn signIn">Sign In</span>
+                <span class="signIn">Sign In</span>
             </div>
         </nav>
     </header>
@@ -38,13 +38,13 @@
                 <h1>Unlimited movies, TV shows and more</h1>
                 <p>Watch anywhere. Cancel anytime.</p>
                 <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
-                <div class="mail">
+                <form method="post" class="mail">
                     <div class="input-mail">
-                        <input type="text" name="mail" id="email" required>
+                        <input type="text" name="email" id="email" required>
                         <label for="email">Email address</label>
                     </div>
-                    <div class="btn get-started">Get Started ›</div>
-                </div>
+                    <input type="submit" name="submit" value="Get Started ›" class="get-started"></input>
+                </form>
             </div>
             <div class="seperator"></div>
         </section>
@@ -153,13 +153,13 @@
                     </div>
                     <div class="form">
                         Ready to watch? Enter your email to create or restart your membership.
-                        <div class="mail">
+                        <form method="post" class="mail">
                             <div class="input-mail">
-                                <input type="text" name="mail" id="mail" required>
+                                <input type="text" name="email" id="mail" required>
                                 <label for="mail">Email address</label>
                             </div>
-                            <div class="btn get-started">Get Started ›</div>
-                        </div>
+                            <input type="submit" name="submit" value="Get Started ›" class="get-started"></input>
+                        </form>
                     </div>
                 </div>
             </div>
